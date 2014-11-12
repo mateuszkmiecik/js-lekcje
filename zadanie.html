@@ -7,31 +7,66 @@
 ## Zadanie 1
 
 
-Kod strony na której będziesz pracować:
+Korzystając z kodu umieszczonego poniżej stwórz następujące funkcjonalności na stronie:
+
+* po kliknięciu przycisku `MAKE THE WORLD #BAD`, kolor tła co drugiego `div.green` ma się zmienić na kolor `#BAD`, a kolor tekstu w pozostałych `divach` na `#DAB`
+* gdy klikniemy przycisk `I JUST WANT A #C0FFEE`, kolor całej strony ma się zmienić na `#C0FFEE`
+* po kliknięciu przycisku `CALL THE SATAN: #666`, kolor strony ma się zmienić na czarny, wyrównanie tekstu w `divach` do prawej i ma on być na czerwono, kolor obramowania `divów` ma być `#666`
+
+**Przydatne materiały**
+
+* https://developer.mozilla.org/pl/docs/DOM_i_JavaScript
+* https://developer.mozilla.org/pl/docs/DOM/element.style
+* http://www.w3schools.com/cssref/
+* https://developer.mozilla.org/pl/docs/DOM/element.addEventListener
+
+**UWAGA**
+
+* spróbuj wyciągać zmienne z kolorami prosto z tekstów przycisków
+* po kliknięciu każdego przycisku ma się pojawić tekst z kolorem w `div#result` umieszczonym na końcu dokumentu - po wszystkich `divach` (jeżeli takiego `diva` nie ma to należy go utworzyć za pomocą **JSa**)
+
+Kod strony na której będziesz pracować (lub pobierz ją stąd: [zad.html](zad.html) * (prawy klawisz myszy i "Zapisz jako")*):
 
 ```
 <!DOCTYPE>
 <html>
 	<head>
 		<title>Zadanie 1</title>
+		<style>
+			.buttons {
+				clear: both;
+				height: 50px;
+			}
+			body {
+				font: 20px Tahoma;
+			}
+			body div {
+				width: 100px;
+				height: 100px;
+				border: 3px solid #333;
+				float: left;
+				margin: 20px;
+				background-color: #bada55;
+				text-align: center;
+				line-height: 100px;
+			}
+		</style>
 	</head>
 	<body>
-		<button>CHANGE THE WORLD</button>
-		<div class="green">
-		</div>
-		<div class="green">
-		</div>
-		<div class="green">
-		</div>
-		<div class="green">
-		</div>
-		<div class="green">
-		</div>
-		<div class="green">
-		</div>
+		<p class="buttons">
+			<button>MAKE THE WORLD #BAD</button>
+			<button>I JUST WANT A #C0FFEE</button>			
+			<button>CALL THE SATAN: #666</button>
+		</p>
+		<div class="green">1</div>
+		<div class="green">2</div>
+		<div class="green">3</div>
+		<div class="green">4</div>
+		<div class="green">5</div>
 	</body>
 </html>
 ```
+
 
 </xmp>
 
